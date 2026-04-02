@@ -1,4 +1,5 @@
 ## 📌 Project Reference
+I implemented API-led architecture using MuleSoft and integrated CI/CD pipelines with Jenkins, TeamCity, and Octopus for multi-cloud deployments.
 
 ### Driscoll’s – Cloud API Integration Platform (AWS + GCP)
 
@@ -89,7 +90,8 @@ Client Applications → Experience API → Process API → System API → Backen
 - Secure API development and deployment  
 
 ---
-
-## 📌 Note
-
-This project reflects my experience working on enterprise-level API integration platforms, focusing on scalable architecture, multi-cloud deployments, and end-to-end DevOps practic
+API-led architecture (MuleSoft)
+✔ CI/CD (Jenkins + TeamCity + Octopus)
+✔ Security (CodeQL + Aqua)
+✔ Monitoring (LogicMonitor + Opsgenie)
+✔ Multi-cloud deployment
