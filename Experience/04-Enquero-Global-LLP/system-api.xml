@@ -1,0 +1,7 @@
+<flow name="system-api">
+    <http:listener config-ref="HTTP_Listener_config" path="/system/orders"/>
+    
+    <logger message="Fetching data from backend"/>
+
+    <set-payload value='{"orderId": "123", "status": "Processed"}'/>
+</flow>
