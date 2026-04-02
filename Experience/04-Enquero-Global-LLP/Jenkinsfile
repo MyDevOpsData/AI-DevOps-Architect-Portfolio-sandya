@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/your-repo.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Code Quality') {
+            steps {
+                sh 'mvn sonar:sonar'
+            }
+        }
+
+        stage('Security Scan') {
+            steps {
+                sh 'codeql scan'
+                sh 'aqua scan'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh 'echo Deploying via Octopus'
+            }
+        }
+    }
+}
