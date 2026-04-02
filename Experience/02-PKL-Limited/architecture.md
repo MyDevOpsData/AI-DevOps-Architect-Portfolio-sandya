@@ -1,7 +1,16 @@
-S3 Static Website Hosting
+# Architecture Overview
 
-- Created S3 bucket
-- Enabled static website hosting
-- Uploaded index.html
-- Configured bucket policy for public access
-- Mapped domain using Route53
+## Static Website Hosting
+
+User → Route53 → S3 → CloudFront
+
+## Migration Phase
+
+User → EC2 → Web Server
+
+## Key Points
+
+- Used S3 for static hosting
+- Used EC2 for dynamic hosting during migration
+- Route53 for domain management
+- CloudFront for performance (optional)
