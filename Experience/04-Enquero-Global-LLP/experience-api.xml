@@ -1,0 +1,9 @@
+<flow name="experience-api">
+    <http:listener config-ref="HTTP_Listener_config" path="/orders"/>
+    
+    <logger message="Received request from client"/>
+
+    <http:request method="GET" url="http://process-api:8081/process/orders"/>
+
+    <logger message="Response sent to client"/>
+</flow>
