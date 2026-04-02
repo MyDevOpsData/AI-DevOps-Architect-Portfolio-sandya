@@ -1,0 +1,5 @@
+Build Steps:
+- Checkout from GitHub
+- Run Maven build
+- Run SonarQube analysis
+- Trigger Octopus deployment
