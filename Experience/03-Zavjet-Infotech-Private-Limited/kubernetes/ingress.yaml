@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: goldstring-ingress
+spec:
+  rules:
+  - host: goldstring.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: goldstring-service
+            port:
+              number: 80
+              
