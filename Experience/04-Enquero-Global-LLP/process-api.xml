@@ -1,0 +1,10 @@
+<flow name="process-api">
+    <http:listener config-ref="HTTP_Listener_config" path="/process/orders"/>
+    
+    <logger message="Processing business logic"/>
+
+    <http:request method="GET" url="http://system-api:8082/system/orders"/>
+
+    <set-payload value="#[payload]"/>
+
+</flow>
