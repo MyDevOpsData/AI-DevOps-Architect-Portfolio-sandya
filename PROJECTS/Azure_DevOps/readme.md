@@ -11,11 +11,11 @@ Automation ensures faster, reliable, and consistent deployments.
      Azure Repos (Git)
             |
             v
-   Azure Pipelines (CI)
+    Azure Pipelines (CI)
    ----------------------
    | Build Docker Image |
    | Push to ACR        |
-   ----------------------
+   ---------------------- *
             |
             v
    Update YAML (Script)
